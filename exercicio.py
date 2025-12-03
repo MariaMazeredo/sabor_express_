@@ -68,3 +68,14 @@ class Pessoa:
 pessoa_1 = Pessoa("Joelma, 30, Salvador")
 pessoa_2 = Pessoa("Ximbinha, 60, Belém")
 pessoa_3 = Pessoa("Faustão, 50, São Paulo")
+
+class Livro:
+    def __init__(self, titulo, autor, ano_publicacao):
+        self.titulo = titulo
+        self.autor = autor
+        self.ano_publicacao = ano_publicacao
+
+    def __str__(self):
+        return f"'{self.titulo}' de {self.autor} ({self.ano})"
+    
+    
